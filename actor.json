@@ -1,0 +1,23 @@
+{
+  "name": "franchise-pdf-downloader",
+  "title": "Franchise PDF Downloader",
+  "description": "Downloads franchise PDFs from WI DFI using Puppeteer CDP",
+  "version": "0.1",
+  "input": {
+    "title": "Start URLs",
+    "type": "object",
+    "properties": {
+      "startUrls": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "url": { "type": "string" }
+          },
+          "required": ["url"]
+        }
+      }
+    },
+    "required": ["startUrls"]
+  }
+}
